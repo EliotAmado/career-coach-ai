@@ -1,0 +1,118 @@
+/* Full-screen animated gradient background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #e0c3fc, #8ec5fc);
+  background-size: 400% 400%;
+  animation: backgroundShift 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card-style container with glass effect */
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  line-height: 1.6;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styles */
+button {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: linear-gradient(90deg, #0056b3, #0099cc);
+}
+
+/* Markdown section */
+.markdown h2 {
+  margin-top: 24px;
+  color: #333;
+}
+.markdown p,
+.markdown li {
+  margin: 8px 0;
+}
+.markdown a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Loading container styling */
+.loading-container {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.12);
+}
+
+/* Progress bar with animated gradient */
+.loading-bar {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  background-size: 200% 100%;
+  animation: gradientMove 2s infinite linear;
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 6px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Tip styling */
+.loading-tip {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
