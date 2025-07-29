@@ -43,7 +43,7 @@ function App() {
     }, 500);
 
     try {
-      const response = await axios.post('http://localhost:8000/chat', null, {
+      const response = await axios.post('https://career-coach-ai-j79y.onrender.com/chat', null, {
         params: { career },
       });
       setSummary(response.data.summary);
