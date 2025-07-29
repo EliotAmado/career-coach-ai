@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain_community
+langchain_core
+python-dotenv
+pydantic
+httpx
+beautifulsoup4
+praw

@@ -1,0 +1,14 @@
+# Node modules (React frontend)
+frontend/node_modules/
+frontend/build/
+
+# Python cache and virtual environment (FastAPI backend)
+backend/__pycache__/
+backend/.venv/
+backend/venv/
+backend/env/
+backend/.env
+
+# System files
+.DS_Store
+Thumbs.db
