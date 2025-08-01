@@ -116,3 +116,14 @@ button:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Delay notice animation */
+.delay-notice {
+  animation: pulseFade 2s infinite;
+}
+
+@keyframes pulseFade {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
