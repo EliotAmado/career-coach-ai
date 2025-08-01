@@ -79,6 +79,10 @@ function App() {
           </div>
           <p>Analyzing {career || 'career'}... {Math.round(progress)}%</p>
           <p className='loading-tip'>{tips[tipIndex]}</p>
+              {/* Render delay notice */}
+          <p style={{ marginTop: '10px', fontStyle: 'italic', color: '#ff9800' }}>
+          ⚠️ Note: Free Render plan may cause ~1-2 min startup delay for requests.
+          </p>
         </div>
       )}
 
